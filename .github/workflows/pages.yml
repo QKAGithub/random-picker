@@ -26,6 +26,16 @@ jobs:
         with:
           channel: stable
 
+      - name: Flutter Version
+        run: flutter --version
+
+      # ✅ เปิด web และสร้างโฟลเดอร์ web ถ้ายังไม่มี
+      - name: Enable web
+        run: flutter config --enable-web
+
+      - name: Create web platform folder if missing
+        run: test -d web || flutter create . --platforms=web
+
       - name: Flutter Pub Get
         run: flutter pub get
 
