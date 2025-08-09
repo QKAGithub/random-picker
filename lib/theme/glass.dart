@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
 
 class Glass {
-  static CardTheme get cardLight => CardTheme(
+  static CardThemeData get cardLight => CardThemeData(
         elevation: 0,
         color: Colors.white.withOpacity(0.55),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
@@ -10,7 +9,7 @@ class Glass {
         margin: const EdgeInsets.all(12),
       );
 
-  static CardTheme get cardDark => CardTheme(
+  static CardThemeData get cardDark => CardThemeData(
         elevation: 0,
         color: Colors.white.withOpacity(0.08),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
@@ -18,12 +17,12 @@ class Glass {
         margin: const EdgeInsets.all(12),
       );
 
-  static DialogTheme get dialogLight => DialogTheme(
+  static DialogThemeData get dialogLight => DialogThemeData(
         backgroundColor: Colors.white.withOpacity(0.7),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
       );
 
-  static DialogTheme get dialogDark => DialogTheme(
+  static DialogThemeData get dialogDark => DialogThemeData(
         backgroundColor: Colors.white.withOpacity(0.1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
       );
